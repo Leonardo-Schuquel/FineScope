@@ -4,18 +4,21 @@ from colorama import Style, Fore
 
 def cumulative_balance():
     release = search_data()
+    current_month = datetime.now().strftime('%m/%Y')
     positive = 0.0
     negative = 0.0
 
-    for month in release:
-        for item in release[month]:
+    for month_key, launches in release.items():
+        if month_key == current_month:
+            continue
+
+        for item in launches:
             if item['event'] == 'Entrada':
                 positive += item['value']
-            else:
+            elif item['event'] == 'Saida':
                 negative += item['value']
     
-    cumulative = positive - negative
-    return cumulative
+    return positive - negative
 
 def entries():
     sum_entries = 0.0
