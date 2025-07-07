@@ -1,4 +1,4 @@
-from auxiliari import clear, validate_resp, add_event, show_launch, save_json, show_current_month, every_month, dell_launch, create_json, record_by_type, cumulative_balance, total_balance, gen_financial_pdf, entries_list, outputs_list
+from auxiliari import clear, validate_resp, add_event, show_launch, save_json, show_current_month, every_month, dell_launch, create_json, record_by_type, cumulative_balance, total_balance, gen_financial_pdf, entries_list, outputs_list, full_balance
 from colorama import Fore, Style
 
 options = {
@@ -77,7 +77,7 @@ def menu_record():
 
 while True:
     create_json()
-    balance = cumulative_balance()
+    balance = full_balance()
     color = Fore.GREEN if balance >= 0 else Fore.RED
     clear()
     print(f'Saldo atual: {color}R$ {balance:.2f}{Style.RESET_ALL}')

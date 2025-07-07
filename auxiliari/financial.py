@@ -20,6 +20,9 @@ def cumulative_balance():
     
     return positive - negative
 
+def full_balance():
+    return cumulative_balance() + entries() - output()
+
 def entries():
     sum_entries = 0.0
     release = search_data() # pega o que tem no arquivo json inteiro
@@ -65,6 +68,8 @@ def record_by_type(event_type: str):
 
     if current_month not in release:
         print("Não foram feitos registros nesse mês")
+        print(50 * '=')
+        input('Digite ENTER para continuar: ')
         return 0.0
     
     total = 0.0

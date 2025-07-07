@@ -6,7 +6,7 @@ import os
 init(autoreset=True)
 
 def search_data():
-    with open("data/data.json", 'r') as file:
+    with open("data/data.json", 'r', encoding='utf-8') as file:
         release = json.load(file)
 
     return release
@@ -95,27 +95,27 @@ def show_launch(user_data):
 # Save launches
 def save_json(user_data):
     current_month = datetime.now().strftime('%m/%Y')
+
     if os.path.exists('data/data.json'):
-        with open('data/data.json', 'r')as file:
+        with open('data/data.json', 'r', encoding='utf-8')as file:
             try:
                 data = json.load(file)
             except json.JSONDecodeError:
                 data = {}
-    else: data = {} # Quero substituir isso pela função search_data
+    else: data = {}
     
     if current_month not in data:
-        data[current_month] = [] #Verifica se já tem registro do mes atual
+        data[current_month] = [] # Check if you already have a record for the current month
     
     data[current_month].append(user_data)
     
-    with open('data/data.json', 'w') as file:
+    with open('data/data.json', 'w', encoding='utf-8') as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
 
 def show_current_month():
     clear()
     current_month = datetime.now().strftime('%m/%Y')
-    with open("data/data.json", "r") as file:
-        releases = json.load(file)
+    releases = search_data()
 
     if current_month not in releases:
         print('Não há nenhum lançamento neste mes')
