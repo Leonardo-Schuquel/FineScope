@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #121212</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="menu_frame">
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="logo">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="logo_name">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;FineScope&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="btns_menu">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="btn_home">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2A2A2A;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+QPushButton:checked {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>Home</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_release">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <fontweight>DemiBold</fontweight>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2A2A2A;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+QPushButton:checked {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>Lançamentos</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_edit">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <fontweight>DemiBold</fontweight>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2A2A2A;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+QPushButton:checked {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>Editar Lançamento</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_history">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <fontweight>DemiBold</fontweight>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2A2A2A;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+QPushButton:checked {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>Histórico</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_pdf">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <fontweight>DemiBold</fontweight>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2A2A2A;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+QPushButton:checked {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>Gerar PDF</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_quit">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <fontweight>DemiBold</fontweight>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2A2A2A;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+
+QPushButton:checked {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>Sair</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_conteiner">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="conteiner">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QStackedWidget" name="pages">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page_home">
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QFrame" name="conteiner_balance">
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+    background-color: #1E1E1E;
+    border-radius: 16px;
+    padding: 5px, 5px, 5px, 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="title_balance">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel#title_balance {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Entradas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="value_balance">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel#value_balance {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>R$ 0,00</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_debts">
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+    background-color: #1E1E1E;
+    border-radius: 16px;
+    padding: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="title_debts">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 500;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:700;&quot;&gt;Saidas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="value_debts">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel#value_debts {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>R$0,00</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="total_balance">
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+    background-color: #1E1E1E;
+    border-radius: 16px;
+    padding: 5px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="title_sum">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 500;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:700;&quot;&gt;Saldo Total&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="sum_release">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>R$0,00</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_release">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QFrame" name="conteiner_release">
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+    background-color: #1E1E1E;
+	border-radius: 12px;
+}
+
+QLabel#title {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+	margin-bottom:12px
+}
+
+QLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #2A2A2A;
+    border: 1px solid #3A3A3A;
+    border-radius: 6px;
+    padding: 6px;
+    color: #FFFFFF;
+	selection-background-color: 2563EB;
+}
+
+QLineEdit::placeholder, QTextEdit::placeholder {
+    color: AAAAAA;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #2563EB;
+}
+
+QPushButton {
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+
+QPushButton#save {
+    background-color: #2563EB;
+    color: #FFFFFF;
+	border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+QPushButton#save:hover {
+    background-color: #1E4FCC;
+}
+
+QPushButton#cancel {
+    background-color: #3A3A3A;
+    color: #FFFFFF;
+	border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+QPushButton#cancel:hover {
+    background-color: #555555;
+}
+
+QPushButton#cancel, QPushButton#save {
+	min-width: 100px;
+}
+
+QRadioButton {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    border: 1px solid #3A3A3A;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QRadioButton::indicator {
+    width: 0;
+	height: 0;
+}
+
+QRadioButton:checked {
+    background-color: #2563EB;
+    border: 1px solid #2563EB;
+}
+
+QRadioButton::indicator:unchecked {
+    background: transparent;
+    border: 2px solid #2563EB;
+	border-radius: 8px
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="3" column="0">
+                  <widget class="QFrame" name="Frame_value_release">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_10">
+                    <item>
+                     <widget class="QLabel" name="title_generic_3">
+                      <property name="text">
+                       <string>Valor</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="value_release">
+                      <property name="placeholderText">
+                       <string>R$</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QFrame" name="title_description">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item>
+                     <widget class="QLabel" name="title_generic_4">
+                      <property name="text">
+                       <string>Descrição</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="description_release"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QFrame" name="title_release">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_8">
+                    <item>
+                     <widget class="QLabel" name="title_generic_2">
+                      <property name="text">
+                       <string>Titulo</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_title">
+                      <property name="placeholderText">
+                       <string>Conta de ...</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="title">
+                   <property name="font">
+                    <font>
+                     <pointsize>-1</pointsize>
+                     <fontweight>DemiBold</fontweight>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Novo Lançamento</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QFrame" name="type_release">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_7">
+                    <item>
+                     <widget class="QLabel" name="title_generic">
+                      <property name="font">
+                       <font>
+                        <pointsize>-1</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Tipo</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="options">
+                      <property name="frameShape">
+                       <enum>QFrame::Shape::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Shadow::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_5">
+                       <item>
+                        <widget class="QRadioButton" name="entrance">
+                         <property name="text">
+                          <string>Entrada</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="departure">
+                         <property name="text">
+                          <string>Saída</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QFrame" name="buttons_release">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QPushButton" name="cancel">
+                      <property name="text">
+                       <string>Cancelar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="save">
+                      <property name="text">
+                       <string>Salvar</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="edit">
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QFrame" name="conteiner_release_2">
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+    background-color: #1E1E1E;
+	border-radius: 12px;
+}
+
+QLabel#title {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+	margin-bottom:12px
+}
+
+QLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #2A2A2A;
+    border: 1px solid #3A3A3A;
+    border-radius: 6px;
+    padding: 6px;
+    color: #FFFFFF;
+	selection-background-color: 2563EB;
+}
+
+QLineEdit::placeholder, QTextEdit::placeholder {
+    color: AAAAAA;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #2563EB;
+}
+
+QPushButton {
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+
+QPushButton#edit_save {
+    background-color: #2563EB;
+    color: #FFFFFF;
+	border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+
+QPushButton#exclude {
+    background-color: #FF0003;
+    color: #FFFFFF;
+	border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+
+QPushButton#exclude, QPushButton#edit_save {
+	min-width: 100px;
+}
+
+QRadioButton {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    border: 1px solid #3A3A3A;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QRadioButton::indicator {
+    width: 0;
+	height: 0;
+}
+
+QRadioButton:checked {
+    background-color: #2563EB;
+    border: 1px solid #2563EB;
+}
+
+QRadioButton::indicator:unchecked {
+    background: transparent;
+    border: 2px solid #2563EB;
+	border-radius: 8px
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="3" column="0">
+                  <widget class="QFrame" name="value_release_3">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_11">
+                    <item>
+                     <widget class="QLabel" name="title_generic_5">
+                      <property name="text">
+                       <string>Valor</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="value_release_2">
+                      <property name="placeholderText">
+                       <string>R$</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QFrame" name="title_description_2">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_12">
+                    <item>
+                     <widget class="QLabel" name="title_generic_6">
+                      <property name="text">
+                       <string>Descrição</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="description_release_2"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QFrame" name="title_release_2">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_13">
+                    <item>
+                     <widget class="QLabel" name="title_generic_7">
+                      <property name="text">
+                       <string>Titulo</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="input_title_2">
+                      <property name="placeholderText">
+                       <string>Conta de ...</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="title_2">
+                   <property name="font">
+                    <font>
+                     <pointsize>-1</pointsize>
+                     <fontweight>DemiBold</fontweight>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Editar Lançamento</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QFrame" name="type_release_2">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_14">
+                    <item>
+                     <widget class="QLabel" name="title_generic_8">
+                      <property name="font">
+                       <font>
+                        <pointsize>-1</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Tipo</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="options_2">
+                      <property name="frameShape">
+                       <enum>QFrame::Shape::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Shadow::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_9">
+                       <item>
+                        <widget class="QRadioButton" name="entrance_2">
+                         <property name="text">
+                          <string>Entrada</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="departure_2">
+                         <property name="text">
+                          <string>Saída</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QFrame" name="buttons_release_2">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <item>
+                     <widget class="QPushButton" name="exclude">
+                      <property name="text">
+                       <string>Excluir</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="edit_save">
+                      <property name="text">
+                       <string>Salvar</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_historical">
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+    background-color: #1E1E1E;
+    border-radius: 12px;
+}
+
+QLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+QTableWidget {
+    background-color: #2A2A2A;
+    border: 1px solid #3A3A3A;
+    border-radius: 8px;
+    color: #FFFFFF;
+    gridline-color: #3A3A3A;
+    selection-background-color: #2563EB;
+    selection-color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    padding: 6px;
+}
+
+QTableWidget::item {
+    padding: 6px;
+}
+
+QPushButton {
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+
+QPushButton#edit {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+QPushButton#edit:hover {
+    background-color: #1E4FCC;
+}
+
+QPushButton#delete {
+    background-color: #D32F2F;
+    color: #FFFFFF;
+}
+QPushButton#delete:hover {
+    background-color: #B71C1C;
+}
+</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QFrame" name="historical_conteiner">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QFrame" name="options_historical">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <item>
+                     <widget class="QPushButton" name="entrance_historical">
+                      <property name="text">
+                       <string>Entradas</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="departure_historical">
+                      <property name="text">
+                       <string>Saidas</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="last_month">
+                      <property name="text">
+                       <string>Ultimo Mês</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="historical">
+                   <column>
+                    <property name="text">
+                     <string>ID</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Tipo</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Titulo</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Valor</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Data</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="list_edit">
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+    background-color: #1E1E1E;
+    border-radius: 12px;
+}
+
+QLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+QTableWidget {
+    background-color: #2A2A2A;
+    border: 1px solid #3A3A3A;
+    border-radius: 8px;
+    color: #FFFFFF;
+    gridline-color: #3A3A3A;
+    selection-background-color: #2563EB;
+    selection-color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    padding: 6px;
+}
+
+QTableWidget::item {
+    padding: 6px;
+}
+
+QPushButton {
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+
+QPushButton#edit {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+QPushButton#edit:hover {
+    background-color: #1E4FCC;
+}
+
+QPushButton#delete {
+    background-color: #D32F2F;
+    color: #FFFFFF;
+}
+QPushButton#delete:hover {
+    background-color: #B71C1C;
+}</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_19">
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_20">
+                 <item>
+                  <widget class="QFrame" name="frame">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QPushButton" name="btn_edit_2">
+                      <property name="text">
+                       <string>Editar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_exclude">
+                      <property name="text">
+                       <string>Excluir</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTableWidget" name="list_edit_2">
+                   <column>
+                    <property name="text">
+                     <string>ID</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Tipo</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Titulo</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Valor</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Data</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

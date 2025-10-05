@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -208,3 +209,46 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+=======
+# -----------------------
+# Python
+# -----------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.tmp
+*.bak
+
+# -----------------------
+# PyInstaller
+# -----------------------
+build/
+dist/
+*.spec
+
+# -----------------------
+# Sistema / IDE
+# -----------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------
+# Arquivos de dados gerados
+# -----------------------
+data.json
+
+# -----------------------
+# Outros temporários
+# -----------------------
+*.egg-info/
+*.egg
+.env
+venv/
+>>>>>>> 0d2ca66 (First version of the MVP with graphical interface)
