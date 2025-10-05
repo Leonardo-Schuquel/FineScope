@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-charset-normalizer==3.4.2
-colorama==0.4.6
-pillow==11.3.0
-reportlab==4.4.2
-=======
+altgraph==0.17.4
 argcomplete==3.6.2
 attrs==25.3.0
 charset-normalizer==3.4.3
@@ -15,10 +10,12 @@ nox==2025.5.1
 packaging==25.0
 pillow==11.3.0
 platformdirs==4.4.0
+pyinstaller==6.16.0
+pyinstaller-hooks-contrib==2025.9
 PySide6==6.9.2
 PySide6_Addons==6.9.2
 PySide6_Essentials==6.9.2
 reportlab==4.4.4
+setuptools==80.9.0
 shiboken6==6.9.2
 virtualenv==20.34.0
->>>>>>> 0d2ca66 (First version of the MVP with graphical interface)
