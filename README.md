@@ -28,7 +28,9 @@ O sistema permite acompanhar receitas, despesas e o saldo mensal de forma práti
 ## 💾 Download
 
 Baixe o executável mais recente do FineScope:
+
 👉 [Versão para Windows](https://github.com/Leonardo-Schuquel/FineScope/releases/tag/untagged-6f2251f2aa61e7be54f3)
+
 👉 [Versão para Linux](https://github.com/Leonardo-Schuquel/FineScope/releases/tag/untagged-53c3b4094497a3be452c)
 
 ## 📁 Estrutura do Projeto
